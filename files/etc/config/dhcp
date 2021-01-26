@@ -1,0 +1,94 @@
+
+config dnsmasq
+	option domainneeded '1'
+	option boguspriv '1'
+	option filterwin2k '0'
+	option localise_queries '1'
+	option rebind_protection '1'
+	option rebind_localhost '1'
+	option local '/lan/'
+	option domain 'lan'
+	option expandhosts '1'
+	option nonegcache '0'
+	option authoritative '1'
+	option readethers '1'
+	option leasefile '/tmp/dhcp.leases'
+	option resolvfile '/tmp/resolv.conf.d/resolv.conf.auto'
+	option nonwildcard '1'
+	option localservice '1'
+	option filter_aaaa '1'
+	option noresolv '0'
+
+config dhcp 'lan'
+	option interface 'lan'
+	option start '100'
+	option limit '150'
+	option leasetime '12h'
+
+config dhcp 'wan'
+	option interface 'wan'
+	option ignore '1'
+
+config host
+	option mac '00:11:32:93:BB:D9'
+	option ip '192.168.1.10'
+	option leasetime 'infinite'
+	option name 'Nas'
+	option dns '1'
+
+config host
+	option mac '98:3B:8F:0C:03:00'
+	option ip '192.168.1.11'
+	option leasetime 'infinite'
+	option name 'MibookPro'
+	option dns '1'
+
+config host
+	option ip '192.168.1.12'
+	option name 'HONOR_9X'
+	option dns '1'
+	option mac '08:31:8b:5c:a5:a8'
+	option leasetime 'infinite'
+
+config host
+	option dns '1'
+	option leasetime 'infinite'
+	option ip '192.168.1.13'
+	option name 'HUAWEI_M6'
+	option mac 'a8:e5:44:fe:e5:76'
+
+config host
+	option ip '192.168.1.14'
+	option leasetime 'infinite'
+	option dns '1'
+	option name 'Mipad4_PLUS'
+	option mac '70:3a:51:1c:fc:8d'
+
+config host
+	option mac '1c:4d:70:97:e6:3b'
+	option ip '192.168.1.20'
+
+config host
+	option mac '7c:2a:31:62:89:4b'
+	option ip '192.168.1.21'
+
+config host
+	option mac '20:16:b9:e7:91:31'
+	option ip '192.168.1.22'
+
+config host
+	option mac '70:47:e9:c1:40:e9'
+	option ip '192.168.1.30'
+
+config host
+	option mac '70:5e:55:a1:49:65'
+	option ip '192.168.1.31'
+
+config host
+	option mac '54:33:cb:94:fa:29'
+	option ip '192.168.1.32'
+
+config host
+	option mac '14:20:5e:aa:85:d2'
+	option ip '192.168.1.33'
+
