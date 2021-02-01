@@ -12,4 +12,4 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
-sed -i 's/set network.$1.username='09136363125'/set network.$1.password='a6363125'/g' package/base-files/files/bin/config_generate
+#sed -i 's/set network.$1.username='09136363125'/set network.$1.password='a6363125'/g' package/base-files/files/bin/config_generate
